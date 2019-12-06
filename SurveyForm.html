@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+
+        #dropdown {
+            width: 300px;
+            height: 100px;
+        }
+
+        body {
+            background-color: rgb(169, 215, 209);
+            text-align: center;
+
+        }
+
+        main {
+            background-color: rgb(250, 250, 250);
+            font-family: serif;
+            font-size: medium;
+            line-height: 40px;
+            color: rgb(87, 87, 87);
+            margin: auto 150px auto 150px;
+            border-radius: 5px;
+        }
+
+        #submit {
+            background-color: rgb(89, 172, 224);
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .input-size {
+            width: 200px;
+            height: auto;
+            
+        }
+
+        select {
+            width: 100px;
+            height: auto;
+        }
+
+        textarea {
+            width: 300px;
+            height: auto;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            
+
+
+        }
+
+        .space-text {
+            flex: 1;
+            text-align: end;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .input-size{
+                width: 80%;
+            }
+
+            .space-input {
+                width: 80%;
+
+            }
+
+            select {
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .flex{
+                
+                flex-direction: column;
+                
+                
+            }
+            .space-text{
+                text-align: left;
+            }
+            .space-input{
+                text-align: left;
+               
+            }
+            
+        }
+
+        .space-input {
+
+            flex: 1;
+            text-align: start;
+        
+
+
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <main>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form action="https://www.baidu.com/">
+
+            <div class="flex">
+                <div class="space-text"><label for="name">* Name:</label></div>
+                <div class="space-input"><input type="text" name="name" placeholder="Enter your name" required id="name"
+                        class="input-size"></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label for="email">* Email: </label></div>
+                <div class="space-input"><input type="email" name="email" placeholder="Enter your Email" required
+                        id="email" class="input-size"></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label for="age">* Age: </label></div>
+                <div class="space-input"><input type="number" name="age" placeholder="Age" required id="age" min="18"
+                        max="48" class="input-size"></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label for="role">Which option best describes your current role?</label></div>
+                <div class="space-input"><select>
+                        <option>Student</option>
+                        <option>Teacher</option>
+                        <option>Doctor</option>
+                        <option>Worker</option>
+                    </select></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label>* How likely is that you would recommend freeCodeCamp to a
+                        friend?</label></div>
+                <div class="space-input"><label for="Definitely"><input type="radio" name="possibility" value="q"
+                            id="Definitely">Definitely</label><br>
+                    <label for="Maybe"><input type="radio" name="possibility" value="w" id="Maybe">Maybe</label><br>
+                    <label for="Not sure"><input type="radio" name="possibility" value="e" id="Not sure">Not
+                        sure</label><br></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label>What do you like most in FCC:</label></div>
+                <div class="space-input"><select>
+                        <option>Challenges</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                        <option>Projects</option>
+                    </select></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label>Things that should be improved in the future
+                        (Check all that apply):</label></div>
+                <div class="space-input">
+                    <label for="Front-end Projects"><input type="checkbox" name="Data Visualization"
+                            id="Front-end Projects">Front-end Projects</label><br>
+                    <label for="Back-end Projects"><input type="checkbox" name="Data Visualization"
+                            id="Back-end Projects">Back-end Projects</label><br>
+                    <label for="Data Visualization"><input type="checkbox" name="Data Visualization"
+                            id="Data Visualization" value="1">Data Visualization</label><br>
+                    <label for="Challenges"><input type="checkbox" name="Data Visualization" id="Challenges"
+                            value="2">Challenges</label><br>
+                    <label for="Open Source"><input type="checkbox" name="Data Visualization" id="Open Source"
+                            value="3">Open Source</label><br>
+                    <label for="Gitter help rooms"><input type="checkbox" name="Data Visualization"
+                            id="Gitter help rooms" value="4">Gitter help rooms</label><br>
+                    <label for="Videos"><input type="checkbox" name="Data Visualization" id="Videos"
+                            value="5">Videos</label><br>
+                    <label for="City Meetups"><input type="checkbox" name="Data Visualization" id="City Meetups"
+                            value="6">City Meetups</label><br>
+                    <label for="Wiki"><input type="checkbox" name="Data Visualization" id="Wiki"
+                            value="7">Wiki</label><br>
+                    <label for="Forum"><input type="checkbox" name="Data Visualization" id="Forum"
+                            value="8">Forum</label><br>
+                    <label for="Additional Courses"><input type="checkbox" name="Data Visualization"
+                            id="Additional Courses" value="9">Additional Courses</label><br></div>
+            </div>
+            <div class="flex">
+                <div class="space-text"><label>Any Comments or Suggestions?</label></div>
+                <div class="space-input"><textarea rows="3" cols="20"
+                        placeholder="Enter your comment here..."></textarea><br></div>
+            </div>
+            <input type="submit" id="submit" value="tijiao">
+        </form>
+    </main>
+ 
+</body>
+
+</html>
