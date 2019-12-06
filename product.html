@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <style>
+        body {
+            background-color: #EEEEEE;
+        }
+
+        .nav {
+            position: fixed;
+            width: 100%;
+            background-color: #EEEEEE;
+            top: 0;
+
+        }
+
+        .nav-div {
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: space-between;
+            padding-top: 20px;
+
+        }
+        @media (max-width: 800px){
+            .nav-div{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .image-style {
+            width: 300px;
+        }
+
+        .nav-a {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        .form-div {
+            text-align: center;
+            margin-top: 70px;
+
+        }
+
+        .section {
+            margin-top: 100px;
+        }
+
+        .section-div {
+            display: grid;
+
+            grid-template-rows: auto;
+            grid-template-columns: 30vw 70vw;
+
+            margin-top: 30px;
+
+
+        }
+
+
+        .i-div {
+            justify-self: end;
+            align-self: center;
+            width: 10vw;
+            color: #FF8C00;
+        }
+        @media(max-width: 800px){
+            .i-div{
+                display: none;
+            }
+        }
+
+        .text-div {
+            justify-self: start;
+            align-self: center;
+            line-height: 20px;
+            width: 60vw;
+        }
+
+
+        .input-style {
+            width: 250px;
+            height: 20px;
+        }
+
+        .submit-style {
+            background-color: #f1c40f;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 800;
+            transition: background 0.5s;
+        }
+        .submit-style:hover{
+            background-color: #FFA500;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .a-div{
+            margin-right: 100px; 
+        }
+        #video{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .pricing{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+           
+        }
+        @media(max-width: 800px){
+            .pricing{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .pricing-div{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            width: 300px;
+            height: 330px;
+            margin-right: 20px;
+            
+        }
+        .pricing-div{
+            margin-top: 20px;
+        }
+
+        .background-div{
+            background-color: #DDDDDD;
+        }
+        .button-style{
+            width: 100px;
+            height: 40px;
+            background-color: #F1C40F;
+            border-radius: 6px;
+            transition: background-color 0.5s;
+            
+            
+        }
+        .button-style:hover{
+            background-color: #FFA500;
+        }
+        .button-div{
+           margin-top: 10px;
+        }
+        .pric-p{
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .footer-div{
+            background-color: #DDDDDD;
+            width: 75%;
+            margin-left: 12%;
+            margin-top: 30px;
+            text-align: right;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            font-size: 15px;
+            line-height: 5px;
+        }
+        .footer-a{
+            margin-right: 20px;
+            margin-left: 20px;
+            
+        }
+        .footer-p{
+            color: gray;
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <!-- 引入图标 -->
+    <main>
+        <header class="nav">
+            <div class="nav-div">
+                <div>
+                    <img class="image-style" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="">
+                </div>
+                <div class="a-div">
+                    <a href="#Features">Features</a>
+                    <a class="nav-a" href="#How It Works">How It Works</a>
+                    <a href="#Pricing">Pricing</a>
+                </div>
+            </div>
+        </header>
+        <form class="form-div" action="https://www.baidu.com/">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <div><input class="input-style" type="email" required placeholder="Enter your email address"></div>
+            <input class="submit-style" value="GET STARTED" type="submit">
+        </form>
+        <section class="section">
+            <div>
+                <div class="section-div">
+                    <div class="i-div"><i class="fa fa-3x fa-fire"></i></div>
+                    <div class="text-div">
+                        <h2 id="Features">Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the
+                            longevity of
+                            your purchase.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="section-div">
+                    <div class="i-div"><i class="fa fa-3x fa-truck"></i></div>
+                    <div class="text-div">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                            free
+                            returns if you are not satisfied.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="section-div">
+                    <div class="i-div"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
+                    <div class="text-div">
+                        <h2> Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check
+                            and test
+                            the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="video" ><video id="How It Works"  src="https://edge.ivideo.sina.com.cn/30629250101.mp4?KID=sina,viask&Expires=1571328000&ssig=XBvbGC78%2BT" width="400px" height="400px" controls="controls">不支持播放视频</video></div>
+        </section>
+        <div class="pricing" id="Pricing">
+            <div class="pricing-div">
+                <div class="background-div"><p class="background-p">TENOR TROMBONE</p></div>
+                <div>
+                <p class="pric-p">$600</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+            </div>
+            <div class="button-div">
+                <button class="button-style">SELECT</button>
+            </div>
+            </div>
+            <div class="pricing-div">
+                <div class="background-div"><p>BASS TROMBONE</p></div>
+                <div>
+                <p class="pric-p">$900</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+            </div>
+            <div class="button-div">
+                <button class="button-style">SELECT</button>
+            </div>
+            </div>
+            <div class="pricing-div">
+                <div class="background-div">
+                <p>VALVE TROMBONE</p>
+            </div>
+            <div>
+                <p class="pric-p">$1200</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor.</p>
+                <p>Lorem ipsum.</p>
+            </div>
+            <div class="button-div">
+                <button class="button-style">SELECT</button>
+            </div>
+            </div>
+        </div>
+        <footer class="footer-div">
+            
+            <a href="#">Privacy</a>
+            <a class="footer-a" href="#">Terms</a>
+            <a href="#">Contact</a>
+            <p class="footer-p">Copyright 2016, Original Trombones</p>
+        
+        </footer>
+        <div>
+            <p class="pric-p">$800</p>
+            <a href="#">privacy</a>
+            <a class="footer-a" href="#">Terms</a>
+            <a href="#">Contact</a>
+            <p class="footer-p">Copyright 2016, Original Trombones</p>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
